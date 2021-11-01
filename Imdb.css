@@ -285,8 +285,7 @@ li>img:hover {
         display: none;
     }
     #img-wrap {
-        width: 25em;
+        width: 20em;
         height: 80vh;
-        margin-right: 30px;
     }
 }
