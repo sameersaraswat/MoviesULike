@@ -10,38 +10,74 @@
 </head>
 <body>
     <nav>
-        <img src="./Images/menu.svg" alt="f-menu" id="mimg" class="first-menu">
-        <img src="./Images/MoviesULikelogo.svg" alt="imdb" id ="imdb">
-        <p id="menu">
-            <img src="./Images/menu.svg" alt="menu" id="mimg">Menu
-        </p>
-        <div id="search">
-            <div id="all" onclick='all_li()'>
-                <div id="present-list">All</div>
-                <img src="./Images/triangle.svg" alt="triangle" id="triangle">
+            <img src="./Images/menu.svg" alt="f-menu" id="mimg" class="first-menu">
+            <img src="./Images/MoviesULikelogo.svg" alt="imdb" id ="imdb">
+            <p id="menu">
+                <img src="./Images/menu.svg" alt="menu" id="mimg">Menu
+            </p>
+            <div id="search">
+                <div id="all" onclick='all_li()'>
+                    <div id="present-list">All</div>
+                    <img src="./Images/triangle.svg" alt="triangle" id="triangle">
+                </div>
+                <ui id="all-list">
+                    <li id="ls-all">
+                        <img src="./Images/scarch.svg" id="list-img">All
+                    </li>
+                    <li id="ls-title"><img src="./Images/film-img.svg" id="list-img">Title</li>
+                    <li id="ls-tv"><img src="./Images/television.svg" id="list-img">TV Episodes</li>
+                    <li id="ls-celibs"><img src="./Images/group.svg" id="list-img">Celibs</li>
+                    <li id="ls-comp"><img src="./Images/company.svg" id="list-img">Companies</li>
+                    <li id="ls-key"><img src="./Images/right-arrow-black-triangle.svg" id="list-img">Keywords</li>
+                    <li id="ls-adv">
+                        <img src="./Images/document-page-blank.svg" id="list-img">Advance Search
+                        <img src="./Images/right-arrow-triangle.svg" class="right-arrow" id="list-img">
+                    </li>
+                </ui>
+                <input placeholder="Search IMDb">
+                <button type="submit"><img src="./Images/scarch.svg"></button>
             </div>
-            <ui id="all-list">
-                <li id="ls-all">
-                     <img src="./Images/scarch.svg" id="list-img">All
-                </li>
-                <li id="ls-title"><img src="./Images/film-img.svg" id="list-img">Title</li>
-                <li id="ls-tv"><img src="./Images/television.svg" id="list-img">TV Episodes</li>
-                <li id="ls-celibs"><img src="./Images/group.svg" id="list-img">Celibs</li>
-                <li id="ls-comp"><img src="./Images/company.svg" id="list-img">Companies</li>
-                <li id="ls-key"><img src="./Images/right-arrow-black-triangle.svg" id="list-img">Keywords</li>
-                <li id="ls-adv">
-                    <img src="./Images/document-page-blank.svg" id="list-img">Advance Search
-                    <img src="./Images/right-arrow-triangle.svg" class="right-arrow" id="list-img">
-                </li>
-            </ui>
-            <input placeholder="Search IMDb">
-            <button type="submit"><img src="./Images/scarch.svg"></button>
-        </div>
-        <div id="pro">MoviesPro</div>
-        <div id="vline"></div>
-        <div id="wlist"><img src="./Images/whtchlist.svg" id="wl-img">Watchlist</div>
-        <div id="sin">Sign In</div>
+            <div id="pro">MoviesPro</div>
+            <div id="vline"></div>
+            <div id="wlist"><img src="./Images/whtchlist.svg" id="wl-img">Watchlist</div>
+            <div id="sin">Sign In</div>
     </nav>
+    
+    <article>
+        <p id="place-holder"><img src="./Images/inside_edge.webp" width="50%"></p>
+    </article>
+    <div id="article-holder">
+        <div>
+            <img src="Images/originals.jpg" id="img-wrap">
+        </div>
+        <div style="color: beige;" id="side-by-side">
+            <h2 style="margin-bottom:30px; color: yellow;">Up Next</h2>
+            <div id="contents">
+                <div id="same-content">
+                    <img src="Images/moonfall.jpg" id="same-img">
+                    <div id="same-name"><p>MoonFall</p>
+                        <p id="hide">Watch the teaser trailer
+                        </p>
+                    </div>
+                </div>
+                <div id="same-content">
+                    <img src="Images/avengersendgame_lob_crd_05.jpg" id="same-img">
+                    <div id="same-name"><p>Avengers: EndGame</p>
+                    <p id="hide">
+                        Watch the Movie
+                    </p></div>
+                </div>
+                <div id="same-content">
+                    <img src="Images/John_Wick_TeaserPoster.jpg" id="same-img">
+                    <div id="same-name"><p>John Wick</p>
+                    <p id="hide">
+                        Watch the new trailer
+                    </p></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 <script src="Imdb.js"></script>
 </html>
