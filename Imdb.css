@@ -287,5 +287,6 @@ li>img:hover {
     #img-wrap {
         width: 25em;
         height: 80vh;
+        margin-right: 30px;
     }
 }
