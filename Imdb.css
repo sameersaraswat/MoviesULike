@@ -280,3 +280,12 @@ li>img:hover {
         display: none;
     }
 }
+@media only screen and (max-width:450px) {
+    #side-by-side {
+        display: none;
+    }
+    #img-wrap {
+        width: 25em;
+        height: 80vh;
+    }
+}
