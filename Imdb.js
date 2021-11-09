@@ -123,6 +123,25 @@ function showRelease (data) {
 }
 
 
+/* ------------------- Explore What's Streaming --------------------- */
+
+stream_bar = document.querySelector("#explore-stream").querySelectorAll("li");
+console.log (stream_bar);
+
+stream_bar.forEach (element => {
+    element.addEventListener("click",function() {
+        stream_bar.forEach(str = str.classList.remove("active1"))
+
+        this.classList.add("active1");
+    })
+})
+
+/* ----------------------- Search Bar ------------------ */
+
+searchMovies ()
+
+
+
 
 
 

@@ -497,3 +497,10 @@ button {
 .active1 {
     border-bottom: 2px solid yellow;
 }
+
+#scroll-features {
+    overflow:auto;
+}
+#scroll-features::-webkit-scrollbar {
+    display: none;
+}
