@@ -7,6 +7,8 @@
     <title>MoviesULike</title>
     <link rel="stylesheet" href="Imdb.css">
     <link rel="icon" href="./Images/MoviesULikelogo.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
     <nav>
@@ -34,8 +36,8 @@
                         <img src="./Images/right-arrow-triangle.svg" class="right-arrow" id="list-img">
                     </li>
                 </ui>
-                <input placeholder="Search IMDb">
-                <button type="submit"><img src="./Images/scarch.svg"></button>
+                <input placeholder="Search IMDb" id="myText">
+                <button type="submit" onclick="myFun()"><img src="./Images/scarch.svg"></button>
             </div>
             <div id="pro">MoviesPro</div>
             <div id="vline"></div>
@@ -74,10 +76,8 @@
                         Watch the new trailer
                     </p></div>
                 </div>
-                <div>
-                    <p class="browse-trailer">Browse Trailers</p>
-                    <svg class="browse-trailer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--chevron-right chevron-right" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>
-                    
+                <div class="browse-div">
+                    <p class="browse-trailer">Browse Trailers &gt;</p>
                 </div>
             </div>
         </div>
@@ -94,10 +94,10 @@
             </div> 
         </div>
         <div id="fan-fav">
-            <h2>
+            <h1 style="color: yellow;">
                 Fan favorites
-            </h2>
-            <h3>This week top movie's</h3>
+            </h1>
+            <h2>This week top movie's</h2>
         </div>
     </div>
     <div id="scroll-features">
@@ -108,7 +108,10 @@
                     <img src="Images/icons8-star-filled-48.png" class="card-star"><p>8.3</p>
                 </div>
                 <p class="name-card">No Time to Die</p>
-                <div class="watch-card"><img src="Images/icons8-plus-math-50.png" class="card-plus"><p class="card-para">WatchList</p></div>
+                <div class="watch-card">
+                    
+                    <p class="card-para">WatchList</p>
+                </div>
                 <div class="card-trailer">
                     <img src="Images/icons8-play-30.png" class="card-play">
                     <p>Trailer</p>
@@ -116,48 +119,26 @@
             </div>
         </div>
     </div>
-    <div id="fan-fav">
-        <h2>
-            Explore What's Streaming
-        </h2>
-        <ol id="explore-stream">
-            <li class="list-stream active1" role="tab" tabindex="0" aria-selected="false">PRIME VIDEO</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">NETFLIX</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">HOTSTAR</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">MX PLAYER</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">JIOCINEMA</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">SONYLIV</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">EROSNOW</li>
-            <li class="list-stream"  role="tab" tabindex="0" aria-selected="false">VOOT</li>
-        </ol>
-    </div>
-    <div id="whats-streaming">
-        <div class="card">
-            <img src="Images/no_time_to_die.jpg" class="card-width">
-            <div class="card-imdb">
-                <img src="Images/icons8-star-filled-48.png" class="card-star"><p>8.3</p>
-            </div>
-            <p class="name-card">No Time to Die</p>
-            <div class="watch-card"><img src="Images/icons8-plus-math-50.png" class="card-plus"><p class="card-para">WatchList</p></div>
-            <div class="card-trailer">
-                <img src="Images/icons8-play-30.png" class="card-play">
-                <p>Trailer</p>
-            </div>
+    <div id="site-end">
+        <div id="cmn-end">
+            <img src="Images/icons8-facebook.svg" alt="">
+            <img src="Images/icons8-instagram.svg" alt="">
+            <img src="Images/icons8-twitter.svg" alt="">
+            <img src="Images/icons8-youtube.svg" alt="">
         </div>
-    </div>
-    <div id="whats-streaming">
-        <div class="card">
-            <img src="Images/no_time_to_die.jpg" class="card-width">
-            <div class="card-imdb">
-                <img src="Images/icons8-star-filled-48.png" class="card-star"><p>8.3</p>
-            </div>
-            <p class="name-card">No Time to Die</p>
-            <div class="watch-card"><img src="Images/icons8-plus-math-50.png" class="card-plus"><p class="card-para">WatchList</p></div>
-            <div class="card-trailer">
-                <img src="Images/icons8-play-30.png" class="card-play">
-                <p>Trailer</p>
-            </div>
+        <div id="cmn-end">
+            <p>Get the MoviesULike</p>
+            <p>Help</p>
+            <p>Site Index</p>
+            <p>MoviesULike Developer</p>
         </div>
+        <div id="cmn-end">
+            <p>Press Room</p>
+            <p>Conditions of Use</p>
+            <p>Privacy Policy</p>
+            <p>Internet Based Ads</p>
+        </div>
+        <h3>an movies company</h3>
     </div>
 </body>
 <script src="Imdb.js"></script>

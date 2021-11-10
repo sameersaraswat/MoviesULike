@@ -1,6 +1,4 @@
 body {
-    position: absolute;
-    width: 100%;
     margin: 0;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +7,6 @@ body {
 nav {
     white-space: nowrap;
     display: flex;
-    width: 100%;
     height: 48px;
     padding: 4px;
     justify-self: center;
@@ -85,7 +82,7 @@ nav {
     list-style: none;
     margin-top:402px;
     width: 222px;
-    background-color: rgb (37,37,37);
+    background-color: rgb(46, 45, 45);
     border-top: 10px solid rgb(37, 37,37);
     border-bottom: 10px solid rgb(37, 37,37);
     cursor: pointer;
@@ -275,7 +272,8 @@ button {
     align-items:baseline;
 }
 .browse-trailer {
-    display: inline;
+    display: flex;
+    margin-left: 5px;
 }
 .browse-trailer:hover {
     color: yellow;
@@ -286,10 +284,17 @@ button {
         display: none;
     }
 }
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:930px) {
     #side-by-side {
         display: none;
     }
+    #img-wrap {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width:450px) {
     #img-wrap {
         width: 20em;
         height: 80vh;
@@ -298,7 +303,6 @@ button {
 /* ------------- Featured Today -------------- */
 #today-features {
     display: flex;
-    margin-left: 10px;
 }
 .today {
     display: flex;
@@ -306,13 +310,14 @@ button {
 }
 .today-mood {
     display: flex;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .today-img {
     width: 150px;
 }
 .same-today {
     overflow: hidden;
+    margin-left: 10px;
 }
 .same-today:hover {
     cursor: pointer;
@@ -326,18 +331,21 @@ button {
 }
 
 /* ---------------------   Fan's Favorite ----------------- */
-#fan-fav {
+#fan-fav>h1 {
     margin-left: 10px;
 }
-#fan-fav>h2,h3,p {
+#fan-fav>h2 {
+    color:coral;
+}
+#fan-fav>h3,p {
     color: white;
 
 }
 #main-card {
     display: flex;
+    margin-left: 10px;
 }
 .card {
-    margin-left: 10px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -354,25 +362,23 @@ button {
 }
 .card-star {
     margin-top: 10px;
-    margin-left: 10px;
     width: 25px;
     height: 27px;
     margin-right: 5px;
 }
 .name-card {
-    margin-left: 10px;
     color: aliceblue;
     padding: 8px;
     height: 2.5rem;
 }
 .watch-card {
-    margin-left: 10px;
     margin-right: 10px;
     padding: 2px;
     background:rgb(117, 115, 115);
     display: flex;
     border-radius: 8px;
     align-items: stretch;
+    justify-content: center;
 }
 .card-plus {
     width: 30px;
@@ -382,16 +388,18 @@ button {
 }
 .card-para {
     padding: 0 7px;
-    color:rgb(64, 230, 180);
+    color:rgb(27, 240, 8);
 }
 .card-trailer {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 .card-trailer>p {
     color: rgb(235, 232, 232);
     font-weight: bold;
+    box-sizing: border-box;
 }
 .card-play {
     height: 25px;
@@ -408,7 +416,7 @@ button {
 }
 .card-trailer:hover {
     border-radius: 10px;
-    margin:5px 0;
+    margin-top:5px;
     margin-left: 30px;
     margin-right: 30px;
     background-color: rgb(56, 55, 55);
@@ -419,7 +427,6 @@ button {
 
 @media only screen and (max-width:400px) {
     .card {
-        margin-left: 10px;
         width: 100px;
         display: flex;
         flex-direction: column;
@@ -432,32 +439,29 @@ button {
     }
     .card-star {
         margin-top: 10px;
-        margin-left: 10px;
         width: 15px;
         height: 17px;
         margin-right: 5px;
     }
     .name-card {
-        margin-left: 10px;
         color: aliceblue;
-        padding: 8px;
+        padding: 4px;
         height:3.5rem;
         overflow: hidden;
     }
     .watch-card {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 2px;
+        margin-right: 5px;
+        padding: 1px;
         background:rgb(117, 115, 115);
         display: flex;
         border-radius: 8px;
         align-items: stretch;
+        justify-content: center;
     }
     .card-plus {
         width: 10px;
         height: 10px;
-        margin-left: 5px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .card-para {
         padding: 0 7px;
@@ -504,3 +508,54 @@ button {
 #scroll-features::-webkit-scrollbar {
     display: none;
 }
+
+
+/* ------------------- Theatres ----------------- */
+
+#theatres>h1,h2 {
+    margin-left: 10px;
+    color: yellow;
+}
+#theatres>div {
+    margin-left: 10px;
+}
+#theatres>div>p {
+    color: wheat;
+}
+#main-card1 {
+    display: flex;
+}
+
+#site-end {
+    margin-left: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cmn-end {
+    display: flex;
+    margin-bottom: 40px;
+}
+#cmn-end>p {
+    margin-right: 40px;
+}
+#cmn-end>img {
+    color: white;
+    margin-right: 70px;
+    width: 2rem;
+}
+#cmn-end>img:hover {
+    box-sizing: border-box;
+    background: rgb(82, 80, 80);
+    padding: 5px;
+    border-radius: 50%;
+}
+#cmn-end>p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+ /* --------------- Responsiveness ------------------ */ 

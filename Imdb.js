@@ -33,6 +33,7 @@ function off_list () {
 }
 
 
+
 // https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&api_key=8d62f59fbe3f51c31b5be6beb8a37914
 
 
@@ -72,7 +73,7 @@ function showMovies (data) {
                     <img src="Images/icons8-star-filled-48.png" class="card-star"><p>${vote_average}</p>
                 </div>
                 <p class="name-card">${title}</p>
-                <div class="watch-card"><img src="Images/icons8-plus-math-50.png" class="card-plus"><p class="card-para">WatchList</p></div>
+                <div class="watch-card"><img src="Images/icons8-plus-+.svg" class="card-plus"><p class="card-para">WatchList</p></div>
                 <div class="card-trailer">
                     <img src="Images/icons8-play-30.png" class="card-play">
                     <p>Trailer</p>
@@ -123,23 +124,15 @@ function showRelease (data) {
 }
 
 
-/* ------------------- Explore What's Streaming --------------------- */
 
-stream_bar = document.querySelector("#explore-stream").querySelectorAll("li");
-console.log (stream_bar);
 
-stream_bar.forEach (element => {
-    element.addEventListener("click",function() {
-        stream_bar.forEach(str = str.classList.remove("active1"))
 
-        this.classList.add("active1");
-    })
-})
 
-/* ----------------------- Search Bar ------------------ */
+/* ----------------      In Theatres ------------------ */
+ 
+const API_URL2 = BASE_URL + '/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&' + API_KEY;
 
-searchMovies ()
-
+const main2 = document.getElementById('main-card');
 
 
 
